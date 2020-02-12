@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="374" started-at="2020-02-12T15:48:29Z" finished-at="2020-02-12T15:48:30Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.RunTestNGTest@8bd1b6a]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="374" started-at="2020-02-12T15:48:29Z" finished-at="2020-02-12T15:48:30Z">
+      <class name="runnerFiles.RunTestNGTest">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:runnerFiles.RunTestNGTest@8bd1b6a]" name="setUpClass" is-config="true" duration-ms="141" started-at="2020-02-12T15:48:29Z" finished-at="2020-02-12T15:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.RunTestNGTest@8bd1b6a]" name="runScenario" duration-ms="165" started-at="2020-02-12T15:48:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-02-12T15:48:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is first scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is a demo feature one"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:runnerFiles.RunTestNGTest@8bd1b6a]" name="runScenario" duration-ms="3" started-at="2020-02-12T15:48:30Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2020-02-12T15:48:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["This is second scenario"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["This is a demo feature one"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:runnerFiles.RunTestNGTest@8bd1b6a]" name="tearDownClass" is-config="true" duration-ms="2" started-at="2020-02-12T15:48:30Z" finished-at="2020-02-12T15:48:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runnerFiles.RunTestNGTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
