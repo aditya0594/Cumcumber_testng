@@ -3,13 +3,25 @@ package stepDefinitions;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+
+import java.time.Duration;
 
 public class DemoFeatureStepDef {
-
+	WebDriver driver;
 	
 	@Given("Precondition is given")
 	public void precondition_is_given() {
-	   System.out.println("Precondition is given");
+		System.setProperty("webdriver.chrome.driver", "DriverChrome/chromedriver_win.exe");
+		ChromeOptions options = new ChromeOptions();
+		options.addArguments("--remote-allow-origins=*");
+		driver = new ChromeDriver(options);
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
+		driver.get("https://demo.automationtesting.in/Register.html");
+		System.out.println("Precondition is given");
 	}
 
 	@When("Something is done")
